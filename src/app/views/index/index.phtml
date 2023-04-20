@@ -1,0 +1,17 @@
+<?php
+
+use countries\Countries;
+
+$con = new Countries();
+?>
+<h2>Select Country</h2>
+<form action="index/gettime" method="post">
+    <select name="selectCountry" id="selectCountry" class="form-control p-2 mt-4">
+        <?php
+        foreach ($con->arr as $key => $value) {
+            echo "<option>$key</option>";
+        }
+        ?>
+    </select>
+    <input type="submit" value="Submit" class="btn btn-primary p-2 mt-2">
+</form>
