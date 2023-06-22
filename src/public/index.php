@@ -24,7 +24,7 @@ $loader->registerDirs(
     ]
 );
 $loader->registerNamespaces([
-    "countries" => APP_PATH . "/config/",
+    "countries" => APP_PATH . "/component/handler/",
 ]);
 
 $loader->register();
